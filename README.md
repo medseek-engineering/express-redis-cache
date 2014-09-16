@@ -70,7 +70,7 @@ You can catch errors by adding a listener:
         prefix: String?       // Cache entry name prefix,
         expire: Number?       // Default expiration time in seconds
         client: RedisClient   // A Redis client of npm/redis
-        suppressErrors: bool? // Any caching error goes to next express middleware.
+        errors: bool?         // If true, errors are emitted. Otherwise, suppressed.
     }
 
 # Commands
