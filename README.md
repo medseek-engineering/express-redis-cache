@@ -62,14 +62,15 @@ You can catch errors by adding a listener:
         expire:  Number // the seconds cache entry lives (-1 if does not expire)
     }
     
-## The ConstructorOPtions Object
+## The ConstructorOptions Object
 
-    Object ConstructorOPtions {
-        host:   String?     // Redis Host
-        port:   Number?     // Redis port
-        prefix: String?     // Cache entry name prefix,
-        expire: Number?     // Default expiration time in seconds
-        client: RedisClient // A Redis client of npm/redis
+    Object ConstructorOptions {
+        host:   String?       // Redis Host
+        port:   Number?       // Redis port
+        prefix: String?       // Cache entry name prefix,
+        expire: Number?       // Default expiration time in seconds
+        client: RedisClient   // A Redis client of npm/redis
+        suppressErrors: bool? // Any caching error goes to next express middleware.
     }
 
 # Commands
